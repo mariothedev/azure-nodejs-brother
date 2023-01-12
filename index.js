@@ -20,18 +20,7 @@ app
       });
   })
   .get("/api", async (_, res) => {
-    // Make a request for a user with a given ID
     res.send("greetings from brother!");
-    // axios
-    //   .get("https://arriba-foundation.azurewebsites.net/api")
-    //   .then(function (response) {
-    //     // handle success
-    //     res.send("response from sister: ", JSON.stringify(response.data));
-    //   })
-    //   .catch(function (error) {
-    //     // handle error
-    //     res.send(JSON.stringify(error));
-    //   });
   })
   .post("/webhook", async (_, res) => {
     axios
